@@ -7,7 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
-    <script type = 'text/javascript' >
+    @*<script type = 'text/javascript' >
         var appInsights=window.appInsights||function(config)
         {
             function r(config){ t[config] = function(){ var i = arguments; t.queue.push(function(){ t[config].apply(t, i)})} }
@@ -18,7 +18,7 @@
         
         window.appInsights=appInsights;
         appInsights.trackPageView();
-    </script>
+    </script>*@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -42,7 +42,24 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="parallax"></div>
+        <div class="row">
+            @*MAIN SECTION*@
+            <div class="col-sm-12 col-md-9" >
+                @RenderBody()
+            </div>
+            @*RIGHT SECTION*@
+            <div class="col-sm-12 col-md-3">
+                <div class="hp-section">
+                    <div class="hp-title">
+                        rezervácie
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+       
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>

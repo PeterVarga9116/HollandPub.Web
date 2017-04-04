@@ -3,10 +3,15 @@
     padding-bottom: 20px;
 }
 
+body, html {
+    height: 100%;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    margin-top:20px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -21,4 +26,42 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.hp-section
+{
+    min-height:100px;
+}
+
+.hp-section .hp-title
+{
+    text-transform:uppercase;
+    background-color:darkorange;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align:center;
+    padding:5px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6a00+0,f79f25+50,ff6a00+100 */
+background: #ff6a00; /* Old browsers */
+background: -moz-linear-gradient(top, #ff6a00 0%, #f79f25 50%, #ff6a00 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ff6a00 0%,#f79f25 50%,#ff6a00 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ff6a00 0%,#f79f25 50%,#ff6a00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6a00', endColorstr='#ff6a00',GradientType=0 ); /* IE6-9 */
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("images/background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
