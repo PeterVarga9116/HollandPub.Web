@@ -31,7 +31,15 @@ namespace HollandPub.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/themify-icons.css",
+                      "~/Content/owl.carousel.min.css",
+                      "~/Content/magnific-popup.css",
+                      "~/Content/icomoon.css",
+                      "~/Content/flexslider.css",
+                      "~/Content/icomoon.css",
+                      "~/Content/animate.css",
+                      "~/Content/bootstrap-datepicker.min.css",
+                      "~/Content/style.css"));
         }
     }
 }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HollandPub.Web", "HollandPu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HollandPub.BusinessObjects", "HollandPub.BusinessObjects\HollandPub.BusinessObjects.csproj", "{7CB1653F-FB6B-4CA4-A619-170EDFF6B27B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HollandPub.Admin", "HollandPub.Admin\HollandPub.Admin.csproj", "{4CFA946A-E054-4102-BF54-3097B1A3A089}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7CB1653F-FB6B-4CA4-A619-170EDFF6B27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CB1653F-FB6B-4CA4-A619-170EDFF6B27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CB1653F-FB6B-4CA4-A619-170EDFF6B27B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CFA946A-E054-4102-BF54-3097B1A3A089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CFA946A-E054-4102-BF54-3097B1A3A089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CFA946A-E054-4102-BF54-3097B1A3A089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CFA946A-E054-4102-BF54-3097B1A3A089}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
