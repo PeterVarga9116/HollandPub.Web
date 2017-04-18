@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Net;
+using System.Text;
 using System.Web.Mvc;
 
 namespace HollandPub.Admin.Controllers
@@ -17,6 +18,8 @@ namespace HollandPub.Admin.Controllers
         private string fbAppSecret = "7faf7f184f26d7b613a12961292aacc3";
         private string scope = "manage_pages,publish_pages,publish_actions,user_posts";
         private string accessToken = string.Empty;
+
+        private string newLine = "\r\n\r\n\r\n\r\n";
 
         public ActionResult Index()
         {
@@ -34,6 +37,9 @@ namespace HollandPub.Admin.Controllers
             menu.AddItem(new MenuItem() { Amount = new decimal(4.2), Name = "2. Cestoviny s tuniakom, A Peperoncino", Description = "" });
             menu.AddItem(new MenuItem() { Amount = new decimal(4.2), Name = "3. Jelení guláš s domácou žemľovou knedľou", Description = "(karé, zemiaky, klobása, slanina)" });
 
+            var sb = new StringBuilder();
+            sb.AppendFormat("{0} - {1}", menu.Date.ToString("dd.MM.yyyy"));
+            sb.Append(newLine);
 
             PostMenuToFacebook(token, menu);
             return Json(string.Empty, JsonRequestBehavior.AllowGet);
